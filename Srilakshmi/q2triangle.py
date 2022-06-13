@@ -5,3 +5,5 @@ if a==b and b==c:
     print("The triangle is equilateralal")
 elif a==b or b==c:
     print("The triangle is issoceles")
+else:
+    print("the triangle is scalene")
