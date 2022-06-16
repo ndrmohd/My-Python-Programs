@@ -1,4 +1,0 @@
-a=[]
-b=int(input("enter a number"))
-for i in a:
-    print(a[b])
