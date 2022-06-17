@@ -1,6 +1,3 @@
-from doctest import ELLIPSIS_MARKER
-
-
 month=str(input("enter month"))
 year=int(input("enter year"))
 
