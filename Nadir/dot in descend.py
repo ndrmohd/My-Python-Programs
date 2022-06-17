@@ -1,3 +1,3 @@
-a=[6,5,4,3,2,1]
-for i in a:
+a=int(input("Enter the range "))
+for i in range(a,0,-1):
     print(i*'*')
