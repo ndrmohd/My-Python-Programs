@@ -1,3 +1,3 @@
-a=(input("*"))
-for i in range(5):
-    print(a*i)
+a=[6,2,5,3,8]
+for i in a:
+    print(i*'*')
