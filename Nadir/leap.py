@@ -1,8 +1,8 @@
-month=str(input("enter month"))
-year=int(input("enter year"))
+m=str(input("Enter month "))
+y=int(input("Enter year "))
 
-if year%400==0 and year%100==0
-    print("leap year")
+if y%4==0
+    print("Leap year")
 elif year%4==0 and year%100!=0
     print("leap year")
 else:
