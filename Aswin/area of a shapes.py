@@ -1,4 +1,4 @@
-from math import sqrt
+from math import sqrt, tan
 a=int(input("Enter the number of sides of the polygon= "))
 if a==0:
     r=int(input('Enter the radius of the circle= '))
