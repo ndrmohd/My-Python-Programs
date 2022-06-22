@@ -40,4 +40,5 @@ while p==11:
     b=int(input('Enter the second number= '))
     print(a//b)
 while p==12:
+    print('Exit')
     break
