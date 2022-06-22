@@ -1,4 +1,4 @@
-from math import sqrt, tan
+from math import sqrt
 a=int(input("Enter the number of sides of the polygon= "))
 if a==0:
     r=int(input('Enter the radius of the circle= '))
@@ -13,11 +13,6 @@ elif a==4:
     l=int(input('Enter the length of the quadrilateral= '))
     b=int(input('Enter the breadth of the quadrilateral= '))
     area=l*b
-    print(area)
-elif a>4:
-    b=int(input('Enter the length of one side of the polygon= '))
-    ri=b/(2*tan(180/a))
-    area=(a*b*ri)/2
     print(area)
 else:
     print("There is no polygon with sides",a)
