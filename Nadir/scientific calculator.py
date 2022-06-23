@@ -3,7 +3,6 @@ print('1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Square root\n6
 p=int(input('Select the operation=> '))
 while p>0:
     for i in range(1,13):
-        
         if p==1 or p=='Addition':
             a=int(input('Enter the first number= '))
             b=int(input('Enter the second number= '))
@@ -20,27 +19,28 @@ while p>0:
             a=int(input('Enter the first number= '))
             b=int(input('Enter the second number= '))
             print(a/b)
-        elif p==5:
+        elif p==5 or p=='Square root':
             a=int(input('Enter the number= '))
             print(sqrt(a))
-        elif p==6:
+        elif p==6 or p=='Square':
             a=int(input('Enter the number= '))
             print(a*a)
-        elif p==7:
+        elif p==7 or p=='cube':
             a=int(input('Enter the number= '))
             print(a*a*a)
-        elif p==8:
+        elif p==8 or p=='sin':
             a=int(input('Enter the number= '))
             print(sin(a))
-        elif p==9:
+        elif p==9 or p=='cos':
             a=int(input('Enter the number= '))
             print(cos(a))
-        elif p==10:
+        elif p==10 or p=='tan':
             a=int(input('Enter the number= '))
             print(tan(a))
-        elif p==11:
+        elif p==11 or p=='Floor division':
             a=int(input('Enter the first number= '))
             b=int(input('Enter the second number= '))
             print(a//b)
         elif p==12:
             print('Exit')
+            break
