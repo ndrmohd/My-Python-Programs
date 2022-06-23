@@ -1,46 +1,47 @@
-from math import cos, sin, sqrt, tan
-print('1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Square root\n6.Square\n7.Cube\n8.Sin\n9.Cos\n10.Tan\n11.Floor Division\n12.Exit')
-p=int(input('Select the operation=> '))
-while p>0:
-    for i in range(1,13):
-        if p==1 or p=='Addition':
-            a=int(input('Enter the first number= '))
-            b=int(input('Enter the second number= '))
-            print(a+b)
-        if p==2 or p=='Subtraction':
-            a=int(input('Enter the first number= '))
-            b=int(input('Enter the second number= '))
-            print(a-b)
-        elif p==3 or p=='Multiplication':
-            a=int(input('Enter the first number= '))
-            b=int(input('Enter the second number= '))
-            print(a*b)
-        elif p==4 or p=='Division':
-            a=int(input('Enter the first number= '))
-            b=int(input('Enter the second number= '))
-            print(a/b)
-        elif p==5 or p=='Square root':
-            a=int(input('Enter the number= '))
-            print(sqrt(a))
-        elif p==6 or p=='Square':
-            a=int(input('Enter the number= '))
-            print(a*a)
-        elif p==7 or p=='cube':
-            a=int(input('Enter the number= '))
-            print(a*a*a)
-        elif p==8 or p=='sin':
-            a=int(input('Enter the number= '))
-            print(sin(a))
-        elif p==9 or p=='cos':
-            a=int(input('Enter the number= '))
-            print(cos(a))
-        elif p==10 or p=='tan':
-            a=int(input('Enter the number= '))
-            print(tan(a))
-        elif p==11 or p=='Floor division':
-            a=int(input('Enter the first number= '))
-            b=int(input('Enter the second number= '))
-            print(a//b)
-        elif p==12:
-            print('Exit')
-            break
+import math
+print('Welcome to MY CALCULATOR')
+status=input('Do you want to Login..? \nYes or No: ')
+while status=='Yes' or status=='Y' or status=='yes' or status=='y':
+    option=(input(' 1  . Addition\n 2  . Subtraction\n 3  . Product\n 4  . Division\n 5  . Square root\n 6  . Power\n 7  . Sin\n 8  . Cos\n 9  . Tan\n 10 . Floor Division\n 11 . Exit\nSelect the operation=>'))
+    if option=='1' or option=='Addition' or option=='add':
+        num1=int(input('Enter the first number= '))
+        num2=int(input('Enter the second number= '))
+        print('Sum of the values= ',num1+num2)
+    elif option=='2' or option=='Difference' or option=='sub':
+        num1=int(input('Enter the first number= '))
+        num2=int(input('Enter the second number= '))
+        print('Difference of the values= ',num1-num2)
+    elif option=='3' or option=='Product' or option=='product' or option=='mul':
+        num1=int(input('Enter the first number= '))
+        num2=int(input('Enter the second number= '))
+        print('Product of the values =',num1*num2)
+    elif option=='4' or option=='Division' or option=='divison':
+        num1=int(input('Enter the first number= '))
+        num2=int(input('Enter the second number= '))
+        print('Quotient of the values= ', num1/num2)
+        print('Remainder of the values= ', num1%num2)
+    elif option=='5' or option=='Square root' or option=='square root' or option=='sqrt':
+        num1=int(input('Enter the number= '))
+        print('Square root of the number is= ',math.sqrt(num1))
+    elif option=='6' or option=='Power' or option=='power':
+        num1=int(input('Enter the number= '))
+        num2=int(input('Enter the power= '))
+        print('Power of the number is= ',num1**num2)
+    elif option=='7' or option=='Sin' or option=='sin':
+        num1=int(input('Enter the number= '))
+        print(math.sin(num1))
+    elif option=='8' or option=='Cos' or option=='cos':
+        num1=int(input('Enter the number= '))
+        print(math.cos(num1))
+    elif option=='9' or option=='Tan' or option=='tan':
+        num1=int(input('Enter the number= '))
+        print(math.tan(num1))
+    elif option=='10' or option=='Floor division':
+        num1=int(input('Enter the first number= '))
+        num2=int(input('Enter the second number= '))
+        print('Floor division of the values= ',num1//num2)
+    elif option=='11':
+        print('Thank you for using this calculator..!! \nHave a nice day..!!')
+        exit()
+    else: print('Invalid option..!')
+if status=='No' or status=='N' or status=='no' or status=='n': exit()
