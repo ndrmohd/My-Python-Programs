@@ -54,3 +54,15 @@ Create a Python program to sum all the items in a list?
 Create a Python program to get the largest number from a list?
 
 
+Balanced strings are those that have an equal quantity of 'A' and 'B' characters.
+
+split the given string in the maximum amount of balanced strings.
+
+Print the maximum amount of split balanced strings.
+
+
+Example 1
+
+Input: s = "ABAABBABAB"
+Output: 4
+Explanation: s can be split into "AB", "AABB", "AB", "AB", each substring contains same number of 'A' and 'B'.
