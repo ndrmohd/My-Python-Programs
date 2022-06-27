@@ -1,0 +1,15 @@
+import platform,datetime,os
+
+print('  ____________________________________________________________________________')
+print('\n           System Details:')
+print('  ____________________________________________________________________________')
+print('\n  Username          :  ',os.getlogin())
+print('  Operating System  :  ',platform.system())
+print('  Version           :  ',platform.version())
+print('  Processor         :  ',platform.processor())
+print('  Platform          :  ',platform.platform())
+print('  Architecture      :  ',platform.architecture())
+print('  Machine Number    :  ',platform.machine())
+print('  ____________________________________________________________________________')
+print('\n  Date & Time       :  ',datetime.datetime.now())
+print(' ')
