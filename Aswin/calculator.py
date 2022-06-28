@@ -26,7 +26,7 @@ while status=="YES" or status=="yes":
     elif option=='5' or option=='SQURE' or option=='squre':
         a=int(input('Enter the  number= '))
         b=int(input('Enter the  Powerr= '))
-        print("Power of the value is",a*a)
+        print("Power of the value is",a**a)
 
     elif option=='6' or option=='POWER' or option=='power':
         a=int(input('Enter the number= '))
