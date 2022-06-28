@@ -1,9 +1,8 @@
-r1=int(input("enter the start range"))
-r2=int(input("enter the end range"))
-for i in range(r1,r2):
-    for j in range(i+1,r2):
-        if j%i!=0:
-            print(i)
+start=int(input("enter start range "))
+end=int(input("enter the end range"))
+for i in range(start,end):
+    for j in range(2,i):
+        if i%j==0:
             break
-        else:
-           print("not a prime")
+    else:
+        print(i)

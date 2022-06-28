@@ -1,10 +1,8 @@
 from cmath import cos, sin, sqrt, tan
-from logging import root
-import math
-while calc=="new":
-        a="there"
-        print(a)
-        print("1","add","\n","2","substraction","\n","3","multiplication","\n","4","division","\n","5","floor division","\n","6","sin","\n","7","cos","\n","8","tan","\n","9","square","\n","10","square root")
+print("CALCULATOR")
+login=input("Y or N")
+while login=="y" or login=="Y":
+        print('1-add \n 2-substraction \n 3-multiplication \n 4-division \n 5-floor division \n 6-sin \n 7-cos \n 8-tan \n 9-power \n 10- square root')
         function=input("select the function")
         if function=="1" or function=="add":
             num1=int(input("enter the number"))
@@ -35,9 +33,20 @@ while calc=="new":
         elif function=="8" or function=="tan":
             num1ta=int(input("enter the number"))
             print(tan(num1ta))
-        elif function=="9" or function=="square":
+        elif function=="9" or function=="power":
             num1sq=int(input("enter the number"))
-            print(num1sq*num1sq)
+            power=int(input("enter the power"))
+            print(num1sq**power)
         elif function=="10" or function=="square root":
             num1sqr=int(input("enter the number"))
             print(sqrt(num1sqr))
+        quitting=input("Do you want to quit")
+        if quitting=="yes" or quitting=="y" or quitting=="Y":
+            print("Thank you")
+            exit()
+        elif quitting=="no" or quitting=="n" or quitting=="N":
+            continue
+if login=="N" or login=="n":
+    exit()
+    
+
