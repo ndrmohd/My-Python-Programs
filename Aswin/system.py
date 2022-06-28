@@ -1,7 +1,7 @@
 import datetime,platform,os
 
 print("                         SYSTEM INFORMATIONS")
-print("                      ________________________          ")
+print("                       ________________________          ")
 option=input(" \n [1] CURRENT DATE AND TIME          |          [5] VERSION \n [2] ARCHITECURE                    |          [6] PROCESSOR \n [3] PLATFORM                       |          [7] USER  \n [4] OPERATING SYSTEM               |          [8] MACHINE \n\n                                [9] EXIT\n")
 if option=='1':
     print(datetime.datetime.now())
