@@ -1,0 +1,37 @@
+import math
+print('Welcome to MY CALCULATOR')
+status=input('Do you want to Login..? \nYes or No: ')
+while status=='Yes' or status=='Y' or status=='yes' or status=='y':
+    option=(input('\n 1  . Addition\n\n 2  . Subtraction\n\n 3  . Product\n\n 4  . Division\n\n 5  . Square root\n\n 6  . Power\n\n 7  . Sin\n\n 8  . Cos\n\n 9  . Tan\n\n 10 . Floor Division\n\n 11 . Exit\n\nSelect the operation=> '))
+    if option==1 or option==2 or option==3 or option==4 or option==6 or option==10:
+        num1=int(input('Enter any number: '))
+        num2=int(input('Enter any number: '))
+        def sum(): print('Sum of the values= ',num1+num2)
+        def sub(): print('Difference of the values= ',num1-num2)
+        def mul(): print('Product of the values= ',num1*num2)
+        def div():
+            print('Quotient of the values= ',num1/num2)
+            print('Remainder of the values= ',num1%num2)
+        def power(): print('Power of the number is= ',num1**num2)
+        def flrdiv(): print('Floor division of the values= ',num1//num2)
+        if option=='1' or option=='Addition' or option=='add': sum()
+        elif option=='2' or option=='Difference' or option=='sub': sub()
+        elif option=='3' or option=='Product' or option=='product' or option=='mul': mul()
+        elif option=='4' or option=='Division' or option=='divison': div()
+        elif option=='6' or option=='Power' or option=='power': power()
+        elif option=='10' or option=='Floor division': flrdiv()
+    if option==5 or option==7 or option==8 or option==9:
+        num1=int(input('Enter any number: '))
+        def sqrt(): print('Square root of the number is= ',math.sqrt(num1))
+        def sin(): print(math.sin(num1))
+        def cos(): print(math.cos(num1))
+        def tan(): print(math.tan(num1))
+        if option=='5' or option=='Square root' or option=='square root' or option=='sqrt': sqrt()
+        elif option=='7' or option=='Sin' or option=='sin': sin()
+        elif option=='8' or option=='Cos' or option=='cos': cos()
+        elif option=='9' or option=='Tan' or option=='tan': tan()
+    if option==11:
+        print('Thank you for using this calculator..!! \nHave a nice day..!!')
+        exit()
+    else: print('Invalid option..!')
+if status=='No' or status=='N' or status=='no' or status=='n': exit()

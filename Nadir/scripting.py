@@ -10,6 +10,8 @@ print('\n  Processor         :  ',platform.processor())
 print('\n  Platform          :  ',platform.platform())
 print('\n  Architecture      :  ',platform.architecture())
 print('\n  Machine Number    :  ',platform.machine())
+
+print('\n  Mother Board      :  ',)
 print('\n  ____________________________________________________________________________')
 print('\n  Date & Time       :  ',datetime.datetime.now())
 print(' ') 
