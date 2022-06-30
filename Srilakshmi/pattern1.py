@@ -1,4 +1,8 @@
-a=int(input("enter a number"))
-b=input("enter the variable to be printed")
-for i in range(a):
-    print(i*b)
+from module import modules
+a=int(input("enter the num"))
+b=input("enter the thing to be printed")
+modules.pt1(a,b)
+
+
+
+

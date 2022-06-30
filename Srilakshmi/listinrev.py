@@ -1,2 +1,3 @@
-a=[2,5,9,23,4]
-print(a.reverse)
+from module import modules
+a=input("enter the list")
+modules.listrev(a)
