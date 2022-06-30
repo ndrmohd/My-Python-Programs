@@ -66,3 +66,10 @@ Example 1
 Input: s = "ABAABBABAB"
 Output: 4
 Explanation: s can be split into "AB", "AABB", "AB", "AB", each substring contains same number of 'A' and 'B'.
+
+
+Create a Python program to display all integers within the range 100-200 whose sum of digits is an even number
+Create a Python program to check whether a string is palindrome or not
+Create a Python program to draw a circle of squares using Turtle
+
+
