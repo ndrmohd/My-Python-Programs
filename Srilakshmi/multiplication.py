@@ -1,3 +1,3 @@
-a=int(input("enter the number"))
-for i in range(1,11):
-    print(i,"*",a,"=",a*i)
+from module import modules
+a=int(input("enter the num"))
+modules.multtab(a)

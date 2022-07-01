@@ -1,8 +1,6 @@
-start=int(input("enter start range "))
-end=int(input("enter the end range"))
-for i in range(start,end):
-    for j in range(2,i):
-        if i%j==0:
-            break
-    else:
-        print(i)
+from module.modules import primerange
+
+
+start=int(input("entre the range"))
+end=int(input("entre the range"))
+primerange(start,end)
