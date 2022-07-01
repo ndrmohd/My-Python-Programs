@@ -1,0 +1,11 @@
+import turtle
+turtle.color('red')
+turtle.fd(300)
+turtle.rt(144)
+turtle.fd(300)
+turtle.rt(144)
+turtle.fd(300)
+turtle.rt(144)
+turtle.fd(300)
+turtle.rt(144)
+turtle.fd(300)
