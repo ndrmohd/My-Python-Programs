@@ -1,0 +1,10 @@
+import turtle
+turtle.rt(30)
+turtle.circle(200,60)
+turtle.lt(120)
+turtle.circle(200,60)
+turtle.lt(90)
+turtle.fd(200)
+turtle.lt(120)
+turtle.fd(200)
+turtle.rt(150)
