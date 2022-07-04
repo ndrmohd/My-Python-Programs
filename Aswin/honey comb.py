@@ -11,4 +11,3 @@ for i in range(4):
         turtle.fd(60)
         turtle.rt(60)
     turtle.rt(120)
-
