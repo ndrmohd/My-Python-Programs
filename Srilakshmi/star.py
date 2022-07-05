@@ -1,0 +1,11 @@
+import turtle
+turtle.fd(180)
+turtle.rt(144)
+turtle.fd(180)
+turtle.rt(144)
+turtle.fd(180)
+turtle.rt(144)
+turtle.fd(180)
+turtle.rt(144)
+turtle.fd(180)
+turtle.rt(144)
