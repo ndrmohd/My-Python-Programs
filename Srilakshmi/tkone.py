@@ -1,15 +1,31 @@
-from cProfile import label
-from cgitb import text
-from doctest import master
-from sqlite3 import Row
 from tkinter import *
-from tkinter.tix import COLUMN
-from tkinter.ttk import Entry 
 main=Tk()
-l1=label(main, text="number1").grid(Row=0)
-l2=label(main,text="number2").grid(Row=1)
-e1=Entry(main)
-e2=Entry(main)
+main.geometry("600x400")
+main.config(background="#b0ebb8")
+def sum():
+    sum=int(e1.get())+int(e2.get())
+    answer.set(sum)
+def sub():
+    sub=int(e1.get())-int(e2.get())
+    answer.set(sub)
+def mult():
+    mult=int(e1.get())*int(e2.get())
+    answer.set(mult)
+def div():
+     div=int(e1.get())/int(e2.get())
+     answer.set(div)
+answer=StringVar()
+l1=Label(main, text="number1").grid(row=0)
+l2=Label(main,text="number2").grid(row=1)
+l3=Label(main,text="result").grid(row=2)
+e1=Entry(main,bg="#388242")
+e2=Entry(main,bg="#388242")
+e3=Entry(main,textvariable=answer,bg="#388242")
+b1=Button(main,text="add",command=sum,bg="#388242",padx="30").grid(row=3)
+b2=Button(main,text="subsraction",command=sub,bg="#388242",padx="30").grid(row=3,column=1)
+b3=Button(main,text="product",command=mult,bg="#388242",padx="30").grid(row=3,column=2)
+b4=Button(main,text="division",command=div,bg="#388242",padx="30").grid(row=3,column=3)
 e1.grid(row=0,column=1)
-e1.grid(row=1,column=1)
+e2.grid(row=1,column=1)
+e3.grid(row=2,column=1)
 main.mainloop()
