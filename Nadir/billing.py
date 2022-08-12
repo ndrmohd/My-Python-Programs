@@ -37,10 +37,13 @@ def printBill():
     finalbill.set(grandtotal)
 
 
-def select():
-    medicine1=selectedMed.get()
+def select1():
+    medicine1=menu.get()
     med1.set(medicine1)
-    
+
+def select2():
+    medicine2=menu.get()
+    med2.set(medicine2)
 
 
 bill=Tk()
@@ -54,7 +57,6 @@ bill.config(bg='#ECF5F2')
 bill.geometry('1580x900')
 
 menu=StringVar()
-drop=StringVar()
 selectedMed=StringVar()
 options=['Not selected','Acetaminophen','Adderall','Amitriptyline','Amlodipine','Amoxicillin','Ativan','Atorvastatin','Azithromycin','Benzonatate','Brilinta','Bunavail','Buprenorphine','Cephalexin','Ciprofloxacin','Citalopram','Clindamycin','Clonazepam','Cyclobenzaprine','Cymbalta','Dolo','Doxycycline','Dupixent','Entresto','Entyvio','Farxiga','Fentanyl','Fentanyl Patch','Gabapentin','Gilenya','Humira','Hydrochlorothiazide','Hydroxychloroquine','Ibuprofen','Imbruvica','Invokana','Januvia','Jardiance','Kevzara','Lexapro','Lisinopril','Lofexidine','Loratadine','Lyrica','Melatonin','Meloxicam','Metformin','Methadone','Methotrexate','Metoprolol','Naloxone','Naltrexone','Naproxen','Omeprazole','Onpattro','Otezla','Ozempic','Pantoprazole','Prednisone','Probuphine','Rybelsus','secukinumab','Sublocade','Tramadol','Trazodone','Viagra','Wellbutrin','Xanax','Zubsolv']
 menu.set('Not selected')
@@ -131,40 +133,35 @@ Label(bill,text='',font='times 12',bg='#ECF5F2').grid(row=10,column=1)
 Label(bill,text='',font='times 12',bg='#ECF5F2').grid(row=11,column=0)
 
 Entry(bill).grid(row=12,column=1)
-med1=Entry(bill,textvariable=selectedMed)
-med1.grid(row=12,column=2)
+Entry(bill,textvariable=med1).grid(row=12,column=2)
 Entry(bill).grid(row=12,column=3)
 Entry(bill).grid(row=12,column=4)
 e1=Entry(bill)
 e1.grid(row=12,column=5)
 
 Entry(bill).grid(row=13,column=1)
-med2=Entry(bill,textvariable=selectedMed)
-med2.grid(row=13,column=2)
+Entry(bill,textvariable=med2).grid(row=13,column=2)
 Entry(bill).grid(row=13,column=3)
 Entry(bill).grid(row=13,column=4)
 e2=Entry(bill)
 e2.grid(row=13,column=5)
 
 Entry(bill).grid(row=14,column=1)
-med3=Entry(bill,textvariable=selectedMed)
-med3.grid(row=14,column=2)
+Entry(bill).grid(row=14,column=2)
 Entry(bill).grid(row=14,column=3)
 Entry(bill).grid(row=14,column=4)
 e3=Entry(bill)
 e3.grid(row=14,column=5)
 
 Entry(bill).grid(row=15,column=1)
-med4=Entry(bill,textvariable=selectedMed)
-med4.grid(row=15,column=2)
+Entry(bill).grid(row=15,column=2)
 Entry(bill).grid(row=15,column=3)
 Entry(bill).grid(row=15,column=4)
 e4=Entry(bill)
 e4.grid(row=15,column=5)
 
 Entry(bill).grid(row=16,column=1)
-med5=Entry(bill,textvariable=selectedMed)
-med5.grid(row=16,column=2)
+Entry(bill).grid(row=16,column=2)
 Entry(bill).grid(row=16,column=3)
 Entry(bill).grid(row=16,column=4)
 e5=Entry(bill)
@@ -213,12 +210,12 @@ Label(f,text="BABU'S MEDICAL STORE",font='times 20 bold',bg='#87CEFA',fg="black"
 Label(f,text='Near post office, Chandappadi,\nPonnani-679577 Phone: 9876543210',font='times 15',bg='#87CEFA').place(x=1105,y=80)
 Label(f,text='--------------------------------',font='times 17',bg='#87CEFA').place(x=1125,y=125)
 Label(f,text='BILL NO: ',font='times 12',bg='#87CEFA').place(x=980,y=160)
-Label(f,text='NAME: ',font='times 12',bg='#87CEFA').place(x=980,y=185)
-Label(f,text='AGE: ',font='times 12',bg='#87CEFA').place(x=980,y=210)
-Label(f,text='PHONE: ',font='times 12',bg='#87CEFA').place(x=980,y=235)
+Label(f,text='NAME: ',font='times 12',bg='#87CEFA').place(x=995,y=185)
+Label(f,text='AGE: ',font='times 12',bg='#87CEFA').place(x=1010,y=210)
+Label(f,text='PHONE: ',font='times 12',bg='#87CEFA').place(x=988,y=235)
 Label(f,text='Consulting Doctor: ',font='times 12',bg='#87CEFA').place(x=1300,y=165)
-Label(f,text='Date: ',font='times 13',bg='#87CEFA').place(x=1300,y=190)
-Label(f,text='Place: ',font='times 13',bg='#87CEFA').place(x=1300,y=215)
+Label(f,text='Date: ',font='times 13',bg='#87CEFA').place(x=1376,y=190)
+Label(f,text='Place: ',font='times 13',bg='#87CEFA').place(x=1370,y=215)
 Label(f,text='---------------------------------------------------------------------------------------------------',font='times 13',bg='#87CEFA').place(x=950,y=260)
 Label(f,text='Sl No.',font='times 11',bg='#87CEFA').place(x=990,y=310)
 Label(f,text='-----',font='times 11',bg='#87CEFA').place(x=995,y=330)
@@ -239,8 +236,11 @@ Label(f,textvariable=doctor2,font='times 10',bg='#87CEFA').place(x=1420,y=165)
 Label(f,textvariable=date2,font='times 10',bg='#87CEFA').place(x=1420,y=190)
 Label(f,textvariable=place2,font='times 10',bg='#87CEFA').place(x=1420,y=215)
 
-btn3=Button(f,text='Add',font='times 10',command=select)
-btn3.place(x=280,y=340)
+btn3=Button(f,text='Add',font='times 10',command=select1)
+btn3.place(x=900,y=360)
+
+btn4=Button(f,text='Add',font='times 10',command=select2)
+btn4.place(x=900,y=390)
 
 
 
